@@ -63,12 +63,9 @@ function closeFAQ(element: Element, done: () => void) {
 							Join our team of 100+ talented UW engineers: gain industry experience, collaborate in
 							a very strong team culture, build the skills to launch into the world after college
 						</p>
-						<NuxtLink
-							to="https://docs.google.com/forms/d/e/1FAIpQLScQ7zmbBv6ft_I_yrrAHKHFAjqPW0LmGrMLeFfggS4s5C1FgA/viewform?usp=dialog"
-							target="_blank"
-							class="text-secondary text-2xl font-bold hover:underline"
-							>APPLICATIONS ARE OPEN</NuxtLink
-						>
+						<p class="text-secondary text-2xl font-bold hover:underline">
+							2025 Fall Applications have now Closed, check back for potential Winter Quarter Applications, or the 2026 Cycle
+						</p>
 					</div>
 				</RoboticsContainer>
 				<RoboticsContainer>
