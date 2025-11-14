@@ -64,7 +64,8 @@ function closeFAQ(element: Element, done: () => void) {
 							a very strong team culture, build the skills to launch into the world after college
 						</p>
 						<p class="text-secondary text-2xl font-bold hover:underline">
-							2025 Fall Applications have now Closed, check back for potential Winter Quarter Applications, or the 2026 Cycle
+							2025 Fall applications have now closed, check back for potential Winter quarter
+							applications, or the 2026 cycle.
 						</p>
 					</div>
 				</RoboticsContainer>
