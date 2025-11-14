@@ -80,24 +80,11 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 								>University of Washington - Seattle</span
 							>
 						</p>
-						<p class="invisible">
-							<NuxtLink
-								to="https://docs.google.com/forms/d/e/1FAIpQLScQ7zmbBv6ft_I_yrrAHKHFAjqPW0LmGrMLeFfggS4s5C1FgA/viewform?usp=dialog"
-								target="_blank"
-								class="text-secondary text-2xl font-bold hover:underline"
-								>APPLICATIONS ARE OPEN</NuxtLink
-							>
-						</p>
 					</div>
 					<div
 						ref="buttonGroup"
 						class="invisible mt-8 flex flex-col gap-8 md:flex-row"
-					>
-						<ArrowLink
-							to="/join"
-							class="animate-pulse"
-							>Join Us</ArrowLink
-						>
+
 						<ArrowLink to="/support">Support Us</ArrowLink>
 					</div>
 				</RoboticsContainer>
