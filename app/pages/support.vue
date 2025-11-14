@@ -160,6 +160,14 @@ function transitionAlert(e: Element) {
 								>Active Mission</span
 							>
 						</p>
+						<ArrowLink
+							to="https://www.washington.edu/giving/make-a-gift/"
+							class="text-secondary mt-4 text-2xl font-bold"
+							>CROWDFUNDING DONATION LINK</ArrowLink
+						>
+						<p class="text-secondary mt-4">
+							Search for "UW Husky Robotics Team" at the link above to donate!
+						</p>
 					</div>
 				</RoboticsContainer>
 			</div>
@@ -209,11 +217,6 @@ function transitionAlert(e: Element) {
 								engineering.</strong
 							>
 						</p>
-						<ArrowLink
-							to="https://www.paypal.com/ncp/payment/F9GXYDWRJBUHJ"
-							class="text-secondary mt-4 animate-pulse text-2xl font-bold"
-							>CROWDFUNDING DONATION LINK</ArrowLink
-						>
 					</div>
 					<div class="flex-1">
 						<img
