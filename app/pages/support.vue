@@ -163,6 +163,7 @@ function transitionAlert(e: Element) {
 						<ArrowLink
 							to="https://www.washington.edu/giving/make-a-gift/"
 							class="text-secondary mt-4 text-2xl font-bold"
+							target="_blank"
 							>CROWDFUNDING DONATION LINK</ArrowLink
 						>
 						<p class="text-secondary mt-4">
