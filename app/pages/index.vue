@@ -110,7 +110,7 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 					</div>
 					<div class="invisible xl:col-span-2">
 						<p class="font-roboto tracking-widest text-neutral-500">URC / CIRC COMPETITIONS</p>
-						<p class="text-lg font-bold text-black">May 28th to 31st / August 8th to 11th</p>
+						<p class="text-lg font-bold text-black">May 27th to 30th <br /> August 7th to 10th</p>
 					</div>
 					<div class="invisible xl:col-span-2">
 						<p class="font-roboto tracking-widest text-neutral-500">OBJECTIVE</p>
