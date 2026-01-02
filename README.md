@@ -1,7 +1,5 @@
 # Husky Robotics Website
 
-Test
-
 This is the GitHub repository for the new Husky Robotics Website. It is built using Nuxt, a free and
  open-source JavaScript library based on Vue.js, Nitro, and Vite. In addition, it uses Tailwind CSS for
 styling, and Nuxt Content for content management. Here are the links to the relevant documentation:
