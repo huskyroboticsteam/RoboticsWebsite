@@ -64,8 +64,8 @@ function closeFAQ(element: Element, done: () => void) {
 							a very strong team culture, build the skills to launch into the world after college
 						</p>
 						<p class="text-secondary text-2xl font-bold hover:underline">
-							2025 Fall applications have now closed, check back for potential Winter quarter
-							applications, or the 2026 cycle.
+							Please check back for Fall 2026 Applications, hoping to open in September.
+							Winter 25 may open on a very limited basis but we are unfortately otherwise at full strength with 100+ members.
 						</p>
 					</div>
 				</RoboticsContainer>
