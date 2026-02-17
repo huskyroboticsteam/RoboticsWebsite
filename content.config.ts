@@ -37,6 +37,21 @@ export default defineContentConfig({
 				)
 			})
 		}),
+		leadership: defineCollection({
+			source: "leadership/**.yaml",
+			type: "data",
+			schema: z.object({
+				name: z.string(),
+				people: z.array(
+					z.object({
+						name: z.string(),
+						role: z.string(),
+						image: z.string(),
+						linkedin: z.string()
+					})
+				)
+			})
+		}),
 		faqs: defineCollection({
 			source: "faqs/**.yaml",
 			type: "data",

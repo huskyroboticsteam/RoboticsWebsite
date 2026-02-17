@@ -1,0 +1,46 @@
+name: Mechanical
+people:
+  - name: Sean Hoagland
+    role: Arm Lead
+    image: "sean.jpg"
+    linkedin: "https://www.linkedin.com/in/sean-a-hoagland/"
+
+  - name: Isla McKasson
+    role: Arm Lead
+    image: "isla.jpg"
+    linkedin: "https://www.linkedin.com/in/isla-mckasson/"
+
+  - name: David Green
+    role: Mobility Lead
+    image: "david.jpg"
+    linkedin: "https://www.linkedin.com/in/davidgreen74/"
+
+  - name: Kien Perryman
+    role: Mobility Lead
+    image: "kien.png"
+    linkedin: "https://www.linkedin.com/in/kien-perryman/"
+
+  - name: Max Schleicher
+    role: Instrumentation Lead
+    image: "max.jpg"
+    linkedin: "https://www.linkedin.com/in/maximillian-schleicher-846068274/"
+
+  - name: Alex Ross
+    role: Instrumentation Lead
+    image: "alex.png"
+    linkedin: "https://www.linkedin.com/in/al-ross/"
+
+  - name: Don Nguyen
+    role: Manufacturing Lead
+    image: "don.jpg"
+    linkedin: "https://www.linkedin.com/in/donnguyen188/"
+
+  - name: Jenny Wang
+    role: Manufacturing Lead
+    image: "jenny.jpg"
+    linkedin: "https://www.linkedin.com/in/chen-wang-b54794299/"
+
+  - name: Tommy Stiles
+    role: Drone Mechanical Lead
+    image: "tommy.jpg"
+    linkedin: "https://www.linkedin.com/in/stiles1/"

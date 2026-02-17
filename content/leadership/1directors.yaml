@@ -1,0 +1,27 @@
+name: Directors
+people:
+  - name: Matthew Grimes
+    role: Operational Director
+    image: "matthew.jpg"
+    linkedin: "https://www.linkedin.com/in/matthew-grimes-304737256/"
+  - name: Lucas Meza
+    role: ME Faculty Advisor
+    image: "meza.png"
+    linkedin: "https://www.linkedin.com/in/lucas-meza-98859665"
+  - name: Sep Makhsous
+    role: ECE Faculty Advisor
+    image: "sep.png"
+    linkedin: "https://www.linkedin.com/in/sepm"
+  - name: Micah Kim
+    role: Business Lead
+    image: "micah.jpg"
+    linkedin: "https://www.linkedin.com/in/micahkim253/"
+  - name: Tom Lewis
+    role: Mechanical Lead
+    image: "tom.jpg"
+    linkedin: "https://www.linkedin.com/in/tomlewis8/"
+  - name: Ryan Lee
+    role: Systems Lead
+    image: "ryan.jpg"
+    linkedin: "https://www.linkedin.com/in/ryanhlee1/"
+

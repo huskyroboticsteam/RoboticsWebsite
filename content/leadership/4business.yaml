@@ -1,0 +1,16 @@
+name: Business
+people:
+  - name: Micah Kim
+    role: Public Relations Lead
+    image: "micah.jpg"
+    linkedin: "https://www.linkedin.com/in/micahkim253/"
+
+  - name: Nelly Mayre Vasquez Perez
+    role: Donor Relations Lead
+    image: "nelly.jpg"
+    linkedin: "http://www.linkedin.com/in/nelly-v"
+
+  - name: Daigo Hayashi
+    role: Finance Lead
+    image: "daigo.jpg"
+    linkedin: "https://www.linkedin.com/in/daigo-hayashi-4b176933b/"

@@ -1,0 +1,49 @@
+<script setup lang="ts">
+useSeoMeta({
+	title: "Leadership | Husky Robotics"
+});
+const { data: leaders } = await useAsyncData("leadership", () =>
+	queryCollection("leadership").all()
+);
+</script>
+<template>
+	<main>
+		<section class="bg-neutral-100">
+			<RoboticsContainer
+				class="py-10"
+				v-for="leader in leaders"
+			>
+				<h2
+					class="my-8 border-b-2 border-b-gray-500 pb-4 text-center text-4xl leading-10 font-bold tracking-wide"
+				>
+					{{ leader.name }}
+				</h2>
+				<div class="grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-30">
+					<div v-for="member in leader.people">
+						<NuxtImg
+							format="webp"
+							class="mx-auto w-full object-contain"
+							:placeholder="[667, 1000]"
+							:src="`/images/leadership/${member.image}`"
+						/>
+						<div class="py-2">
+							<h3
+								class="text-xl font-semibold text-black md:text-2xl md:tracking-wider lg:text-3xl"
+							>
+								{{ member.role }}
+							</h3>
+							<div>
+								<h4
+									class="inline font-roboto tracking-robotics text-neutral-500 uppercase lg:text-lg"
+								>
+									{{ member.name }}
+									<i class="fa-brands fa-linkedin ml-1 align-middle text-2xl"></i>
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</RoboticsContainer>
+		</section>
+	</main>
+</template>
