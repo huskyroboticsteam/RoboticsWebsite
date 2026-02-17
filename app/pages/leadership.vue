@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-	title: "Leadership | Husky Robotics"
+	title: "Leadership | Husky Robotics",
+	description: "Meet the team leading Husky Robotics."
 });
 const { data: leaders } = await useAsyncData("leadership", () =>
 	queryCollection("leadership").all()
