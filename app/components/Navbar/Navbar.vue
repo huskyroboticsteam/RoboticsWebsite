@@ -27,21 +27,21 @@ const links: Link[] = [
 ];
 const subLinks: Link[] = [
 	{ text: "Subteams", url: "/subteams" },
-	{ text: "Newsletter and Events", url: "/newsletter" },
+	{ text: "Leadership", url: "/leadership" },
 	{ text: "Sponsors", url: "/sponsors" }
 ];
 </script>
 <template>
 	<Html :class="{ 'overflow-hidden lg:overflow-auto': menuBarOpen }" />
 	<div class="top-0 z-50 will-change-transform">
-		<nav class="bg-primary hidden items-center justify-center px-4 py-5 lg:flex lg:flex-col">
+		<nav class="hidden items-center justify-center bg-primary px-4 py-5 lg:flex lg:flex-col">
 			<div class="flex w-full flex-row px-6">
 				<NuxtLink
 					href="/"
 					class="flex flex-1 flex-row items-center space-x-5"
 				>
 					<p
-						class="font-roboto tracking-robotics text-secondary select-none text-[0.8rem] uppercase transition-colors duration-200 ease-in-out"
+						class="font-roboto text-[0.8rem] tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
 					>
 						Husky Robotics - UW Seattle
 					</p>
@@ -68,7 +68,7 @@ const subLinks: Link[] = [
 				</div>
 			</div>
 		</nav>
-		<nav class="bg-alt hidden items-center justify-center py-2 lg:flex lg:flex-col">
+		<nav class="hidden items-center justify-center bg-alt py-2 lg:flex lg:flex-col">
 			<div class="columns-3 content-center items-center justify-center">
 				<div
 					v-for="link in subLinks"
@@ -84,7 +84,7 @@ const subLinks: Link[] = [
 			</div>
 		</nav>
 		<nav
-			class="bg-primary relative flex items-center justify-center border-b-2 px-4 py-3 lg:hidden"
+			class="relative flex items-center justify-center border-b-2 bg-primary px-4 py-3 lg:hidden"
 		>
 			<div class="container flex flex-row items-center justify-between">
 				<div class="flex flex-row items-center space-x-5">
@@ -94,11 +94,11 @@ const subLinks: Link[] = [
 						alt="Husky Robotics Logo"
 					/>
 				</div>
-				<p class="font-roboto tracking-robotics text-secondary text-lg uppercase">Husky Robotics</p>
+				<p class="font-roboto text-lg tracking-robotics text-secondary uppercase">Husky Robotics</p>
 				<button
 					role="button"
 					@click="toggleMenu()"
-					class="text-secondary w-10 rounded-sm py-0.5 text-2xl font-extrabold transition-colors duration-100 ease-in-out"
+					class="w-10 rounded-sm py-0.5 text-2xl font-extrabold text-secondary transition-colors duration-100 ease-in-out"
 				>
 					<i
 						class="fa-solid fa-bars"
