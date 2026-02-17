@@ -1,6 +1,3 @@
-<!--suppress CssUnusedSymbol, CssUnusedSymbol, CssUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol
--->sUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol
--->sUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol -->sUnusedSymbol -->
 <script setup lang="ts">
 import { ref } from "vue";
 let menuBarOpen = ref(false);
