@@ -37,7 +37,13 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 									class="inline font-roboto tracking-robotics text-neutral-500 uppercase lg:text-lg"
 								>
 									{{ member.name }}
-									<i class="fa-brands fa-linkedin ml-1 align-middle text-2xl"></i>
+									<NuxtLink
+										:href="member.linkedin"
+										target="_blank"
+										class="hover:text-black"
+									>
+										<i class="fa-brands fa-square-linkedin scale-150 align-middle"></i>
+									</NuxtLink>
 								</h4>
 							</div>
 						</div>
