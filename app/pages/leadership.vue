@@ -14,11 +14,13 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 				class="py-10"
 				v-for="leader in leaders"
 			>
-				<h2
-					class="my-8 border-b-2 border-b-gray-500 pb-4 text-center text-4xl leading-10 font-bold tracking-wide"
-				>
-					{{ leader.name }}
-				</h2>
+				<div class="flex justify-center">
+					<h2
+						class="my-8 inline-block border-b-2 border-b-gray-500 pb-4 text-center text-4xl font-bold tracking-wide"
+					>
+						{{ leader.name }}
+					</h2>
+				</div>
 				<div class="grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-30">
 					<div v-for="member in leader.people">
 						<NuxtImg
