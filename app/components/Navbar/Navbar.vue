@@ -66,7 +66,7 @@ const subLinks: Link[] = [
 			</div>
 		</nav>
 		<nav class="hidden items-center justify-center bg-alt py-2 lg:flex lg:flex-col">
-			<div class="columns-3 content-center items-center justify-center">
+			<div class="columns-3 content-center items-center justify-center gap-x-16">
 				<div
 					v-for="link in subLinks"
 					class=""

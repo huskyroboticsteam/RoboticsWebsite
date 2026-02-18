@@ -21,7 +21,7 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 						{{ leader.name }}
 					</h2>
 				</div>
-				<div class="grid gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-30">
+				<div class="mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20">
 					<div v-for="member in leader.people">
 						<NuxtImg
 							format="webp"
@@ -31,7 +31,7 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 						/>
 						<div class="py-2">
 							<h3
-								class="text-xl font-semibold text-black md:text-2xl md:tracking-wider lg:text-3xl"
+								class="text-xl font-semibold text-black md:text-2xl md:tracking-wider lg:text-2xl"
 							>
 								{{ member.role }}
 							</h3>
