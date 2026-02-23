@@ -28,7 +28,6 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 							class="mx-auto w-full object-contain"
 							:placeholder="[667, 1000]"
 							:src="`/images/leadership/${member.image}`"
-							style="filter: brightness(1.3) saturate(1.1)"
 						/>
 						<div class="py-2">
 							<h3
