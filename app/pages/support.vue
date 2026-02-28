@@ -149,26 +149,23 @@ function transitionAlert(e: Element) {
 					);
 				"
 			>
-				<RoboticsContainer class="md:py-30 space-y-8 py-20">
-					<div class="md:max-w-1/2 space-y-8">
-						<h1 class="leading-18 text-secondary lg:leading-25 text-6xl font-bold lg:text-7xl">
+				<RoboticsContainer class="space-y-8 py-20 md:py-30">
+					<div class="space-y-8 md:max-w-1/2">
+						<h1 class="text-6xl leading-18 font-bold text-secondary lg:text-7xl lg:leading-25">
 							Support<br />Husky Robotics
 						</h1>
 						<p class="space-x-3 align-middle">
 							<i class="fa-solid fa-circle text-active-green"></i>
-							<span class="font-roboto tracking-robotics text-secondary text-center uppercase"
+							<span class="text-center font-roboto tracking-robotics text-secondary uppercase"
 								>Active Mission</span
 							>
 						</p>
 						<ArrowLink
-							to="https://www.washington.edu/giving/make-a-gift/"
-							class="text-secondary mt-4 text-2xl font-bold"
+							to="https://together.uw.edu/i/uw/campaign/fuel-the-husky-rover-2025-2026/"
+							class="mt-4 text-2xl font-bold text-secondary"
 							target="_blank"
 							>CROWDFUNDING DONATION LINK</ArrowLink
 						>
-						<p class="text-secondary mt-4">
-							Search for "UW Husky Robotics Team" at the link above to donate!
-						</p>
 					</div>
 				</RoboticsContainer>
 			</div>
@@ -383,7 +380,7 @@ function transitionAlert(e: Element) {
 					<button
 						type="submit"
 						:disabled="!canSubmit"
-						class="bg-tertiary text-secondary hover:bg-tertiary/90 w-full cursor-pointer rounded-md px-10 py-3 font-bold transition-colors duration-200 ease-in-out disabled:cursor-not-allowed disabled:bg-zinc-300 lg:w-fit"
+						class="w-full cursor-pointer rounded-md bg-tertiary px-10 py-3 font-bold text-secondary transition-colors duration-200 ease-in-out hover:bg-tertiary/90 disabled:cursor-not-allowed disabled:bg-zinc-300 lg:w-fit"
 					>
 						Submit
 					</button>
@@ -412,7 +409,7 @@ function transitionAlert(e: Element) {
 	@apply flex flex-row items-center space-x-4 text-sm md:text-base;
 }
 .checkboxes > label > input {
-	@apply rounded-xs h-4 w-4 cursor-pointer appearance-none border-2 border-black;
+	@apply h-4 w-4 cursor-pointer appearance-none rounded-xs border-2 border-black;
 	@apply transition-colors duration-200 ease-in-out;
 	@apply checked:bg-black;
 }
