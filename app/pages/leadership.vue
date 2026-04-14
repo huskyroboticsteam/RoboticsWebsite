@@ -23,10 +23,8 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 				</div>
 				<div class="mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20">
 					<div v-for="member in leader.people">
-						<NuxtImg
-							format="webp"
+						<img
 							class="mx-auto w-full object-contain"
-							:placeholder="[667, 1000]"
 							:src="`/images/leadership/${member.image}`"
 						/>
 						<div class="py-2">

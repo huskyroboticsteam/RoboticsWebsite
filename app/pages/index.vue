@@ -194,8 +194,7 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 							>
 						</div>
 						<div class="flex flex-1 flex-row justify-center">
-							<NuxtImg
-								format="webp"
+							<img
 								:alt="`Picture of ${team.name}.`"
 								:src="`/images/teams/${team.img}`"
 								class="aspect-3/2 object-cover lg:aspect-16/9 lg:p-5"
@@ -203,8 +202,7 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 						</div>
 					</div>
 				</div>
-				<NuxtImg
-					format="webp"
+				<img
 					alt="Entire Robotics Team Photo"
 					src="/images/teams/full.jpg"
 					class="mx-auto lg:max-w-3/5"
@@ -226,8 +224,7 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 					<div
 						class="flex flex-1 flex-row-reverse items-center justify-between space-x-8 lg:flex-row lg:justify-start"
 					>
-						<NuxtImg
-							format="webp"
+						<img
 							alt="Electronics thumbnail"
 							class="h-20 lg:h-auto lg:w-20"
 							:src="`/images/gallery/thumbnails/${category.img}`"

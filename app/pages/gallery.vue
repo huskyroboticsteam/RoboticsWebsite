@@ -43,7 +43,7 @@ onMounted(() => {
 			</RoboticsContainer>
 		</section>
 		<section class="bg-primary">
-			<RoboticsContainer class="lg:space-y-50 space-y-20 py-20 xl:w-3/4">
+			<RoboticsContainer class="space-y-20 py-20 lg:space-y-50 xl:w-3/4">
 				<div
 					v-for="collection in gallery"
 					class="space-y-8"
@@ -62,15 +62,14 @@ onMounted(() => {
 							:key="item.name"
 						>
 							<div class="flex-1 py-8">
-								<NuxtImg
-									format="webp"
+								<img
 									alt="Electronics bed"
 									class="mx-auto h-full object-contain"
 									:src="`/images/gallery/${item.img}`"
 								/>
 							</div>
 							<div>
-								<p class="tracking-robotics mb-1 text-xs text-zinc-400">
+								<p class="mb-1 text-xs tracking-robotics text-zinc-400">
 									2025 | {{ collection.name }}
 								</p>
 								<h3 class="pb-4 text-xl font-bold text-neutral-100">{{ item.name }}</h3>

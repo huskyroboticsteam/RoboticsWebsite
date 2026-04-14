@@ -46,14 +46,12 @@ function headerTransitionEnter(el: Element) {
 <template>
 	<main>
 		<section>
-			<NuxtImg
-				format="webp"
+			<img
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/about2.jpg"
 				class="aspect-16/8 w-full object-cover object-bottom lg:hidden"
 			/>
-			<NuxtImg
-				format="webp"
+			<img
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/subteams.jpg"
 				class="hidden w-full lg:block"
@@ -70,7 +68,7 @@ function headerTransitionEnter(el: Element) {
 						resolving critical system failures, conducting rigorous scientific analyses, and
 						achieving comprehensive system integration under demanding timelines.
 					</p>
-					<p class="font-roboto tracking-robotics text-sm text-neutral-500">
+					<p class="font-roboto text-sm tracking-robotics text-neutral-500">
 						Husky Robotics Team (2025)
 					</p>
 				</div>
@@ -85,7 +83,7 @@ function headerTransitionEnter(el: Element) {
 					>
 						<NuxtLink
 							v-if="currentTeam && team.subteams"
-							class="hover:text-primary cursor-pointer select-none border-b-2 text-3xl font-bold leading-10 tracking-wide transition-colors duration-200 ease-in-out"
+							class="cursor-pointer border-b-2 text-3xl leading-10 font-bold tracking-wide transition-colors duration-200 ease-in-out select-none hover:text-primary"
 							:class="currentTeam.name === team.name ? 'text-black' : 'text-neutral-400'"
 							:to="{ path: '/subteams', query: { tab: team.name } }"
 						>

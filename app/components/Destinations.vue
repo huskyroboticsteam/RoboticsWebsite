@@ -73,7 +73,7 @@ const destinations: destination[] = [
 						:to="dest.link"
 						class="block h-full w-full"
 					>
-						<NuxtImg
+						<img
 							:src="`/images/destinations/${dest.file}`"
 							:alt="dest.alt"
 							class="mx-auto h-full max-h-16 w-auto object-contain transition-transform duration-200 ease-in-out hover:scale-110"
