@@ -5,7 +5,10 @@ export default defineNuxtConfig({
 	devtools: { enabled: false },
 	modules: ["@vueuse/nuxt", "@nuxt/content"],
 	vite: {
-		plugins: [tailwindcss()]
+		plugins: [tailwindcss()],
+		optimizeDeps: {
+			include: ["gsap", "gsap/ScrollTrigger", "gsap/SplitText", "gsap/ScrollToPlugin", "zod"]
+		}
 	},
 	css: ["~/assets/css/main.css"],
 	app: {
