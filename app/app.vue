@@ -2,7 +2,7 @@
 useSeoMeta({
 	title: "Husky Robotics",
 	themeColor: "#ffffff",
-	ogImage: "https://huskyrobotics.me/logoOriginal_sm.png"
+	ogImage: "https://uwrobots.org/logoOriginal_sm.png"
 });
 </script>
 <template>
