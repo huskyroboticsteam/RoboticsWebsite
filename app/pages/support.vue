@@ -6,8 +6,9 @@ let formError = ref("");
 let formSuccess = ref(false);
 let loading = ref(false);
 const config = useRuntimeConfig();
-import type { ZodIssue } from "zod";
 import { OutreachFormSchema } from "#shared/OutreachFormSchema";
+import * as z from "zod";
+
 useSeoMeta({
 	title: "Support Us | Husky Robotics",
 	description:
@@ -99,7 +100,7 @@ async function handleSubmit(e: Event) {
 		}
 	}).catch((error: FetchError) => {
 		if (error.status == 400) {
-			error.data.forEach((element: ZodIssue) => {
+			error.data.forEach((element: z.ZodError) => {
 				errors.value[element.path[0] as keyof Error] = element.message;
 			});
 		} else if (error.status == 403) {

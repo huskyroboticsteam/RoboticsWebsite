@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ZodSchema } from "zod";
+import * as z from "zod";
 import type { ModelRef } from "vue";
 
 const props = defineProps({
@@ -9,7 +9,7 @@ const props = defineProps({
 		default: "Form Input"
 	},
 	maxlength: Number,
-	schema: Object as () => ZodSchema<any>
+	schema: Object as () => z.ZodSchema<any>
 });
 const value: ModelRef<string | undefined> = defineModel<string>();
 const error: ModelRef<string | undefined> = defineModel<string>("error");
