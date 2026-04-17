@@ -51,6 +51,7 @@ const sponsors: Sponsor[] = [
 	{ name: "REV Robotics", logo: "rev.png", url: "https://www.revrobotics.com/" },
 	{ name: "Harmonic Drive", logo: "hd.gif", url: "https://www.harmonicdrive.net/" },
 	{ name: "Husky Union Building", logo: "hub.png", url: "https://hub.washington.edu/" },
+	{ name: "Stoiber Engineering", logo: "stoi.png", url: "https://stoiberengineering.com/" },
 	{ name: "Texas Instruments", logo: "ti.png", url: "https://www.ti.com/" },
 	{ name: "Protocase", logo: "protocase.png", url: "https://www.protocase.com/" }
 ];
