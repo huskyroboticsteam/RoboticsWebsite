@@ -20,7 +20,8 @@ const links: Link[] = [
 	{ text: "About", url: "/about" },
 	{ text: "Gallery", url: "/gallery" },
 	{ text: "Support", url: "/support" },
-	{ text: "Join Us", url: "/join" }
+	{ text: "Join Us", url: "/join" },
+	{ text: "Competition", url: "/competition" }
 ];
 const subLinks: Link[] = [
 	{ text: "Subteams", url: "/subteams" },
