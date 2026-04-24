@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 	css: ["~/assets/css/main.css"],
 	app: {
 		head: {
-			link: [{ rel: "icon", href: "./favicon.ico", type: "image/ico" }],
+			link: [{ rel: "icon", href: "/favicon.ico", type: "image/ico" }],
 			script: [{ src: "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" }]
 		}
 	},
