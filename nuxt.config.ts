@@ -17,11 +17,20 @@ export default defineNuxtConfig({
 			script: [{ src: "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" }]
 		}
 	},
-	ssr: true,
+	routeRules: {
+		"/**": { prerender: true },
+		"/api/**": { prerender: false, cors: true }
+	},
+	image: {
+		provider: "ipxStatic"
+	},
 	nitro: {
+		preset: "cloudflare_pages",
 		prerender: {
 			crawlLinks: true,
-			failOnError: false
+			failOnError: false,
+			ignore: ["/api"],
+			routes: ["/"]
 		}
 	},
 	runtimeConfig: {
@@ -32,9 +41,5 @@ export default defineNuxtConfig({
 		discordWebhook: "",
 		emailEndPoint: "",
 		emailSecret: ""
-	},
-	routeRules: {
-		"/**": { prerender: true },
-		"/api/**": { prerender: false }
 	}
 });
