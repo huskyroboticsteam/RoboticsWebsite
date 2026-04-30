@@ -21,9 +21,6 @@ export default defineNuxtConfig({
 		"/**": { prerender: true },
 		"/api/**": { prerender: false, cors: true }
 	},
-	image: {
-		provider: "ipxStatic"
-	},
 	nitro: {
 		preset: "cloudflare_pages",
 		prerender: {

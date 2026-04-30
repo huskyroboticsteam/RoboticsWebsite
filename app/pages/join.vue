@@ -54,18 +54,17 @@ function closeFAQ(element: Element, done: () => void) {
 					);
 				"
 			>
-				<RoboticsContainer class="md:py-30 space-y-8 py-20">
-					<div class="md:max-w-1/2 space-y-8">
-						<h1 class="leading-18 text-secondary text-6xl font-bold lg:text-7xl">
+				<RoboticsContainer class="space-y-8 py-20 md:py-30">
+					<div class="space-y-8 md:max-w-1/2">
+						<h1 class="text-6xl leading-18 font-bold text-secondary lg:text-7xl">
 							Get Involved With<br />Husky Robotics
 						</h1>
-						<p class="text-secondary md:max-w-1/2 pb-5 text-lg">
+						<p class="pb-5 text-lg text-secondary md:max-w-1/2">
 							Join our team of 100+ talented UW engineers: gain industry experience, collaborate in
 							a very strong team culture, build the skills to launch into the world after college
 						</p>
-						<p class="text-secondary text-2xl font-bold hover:underline">
+						<p class="text-2xl font-bold text-secondary">
 							Please check back for Fall 2026 Applications, hoping to open in September.
-							Winter 25 may open on a very limited basis but we are unfortately otherwise at full strength with 100+ members.
 						</p>
 					</div>
 				</RoboticsContainer>
@@ -99,12 +98,6 @@ function closeFAQ(element: Element, done: () => void) {
 							We combine high-impact engineering with a strong, collaborative community built to
 							meet the standards of pacific northwest industry.
 						</p>
-						<p class="text-xl font-bold italic">APPLY NOW</p>
-						<ArrowLink
-							to="https://docs.google.com/forms/d/e/1FAIpQLScQ7zmbBv6ft_I_yrrAHKHFAjqPW0LmGrMLeFfggS4s5C1FgA/viewform?usp=dialog"
-							target="_blank"
-							>Application Form</ArrowLink
-						>
 					</div>
 					<div class="flex flex-1 items-center justify-end text-white">
 						<div class="linklist">
@@ -147,7 +140,7 @@ function closeFAQ(element: Element, done: () => void) {
 				<div class="flex flex-col space-y-8">
 					<div class="flex flex-col items-center gap-10 lg:flex-row">
 						<p
-							class="border-b-1 flex-1 border-b-neutral-400 py-8 text-xl font-medium leading-10 lg:text-2xl"
+							class="flex-1 border-b-1 border-b-neutral-400 py-8 text-xl leading-10 font-medium lg:text-2xl"
 						>
 							"Husky Robotics gave me hands-on experience I couldn't get from classes. Every day
 							here is about trying new ideas and solving interesting problems."
@@ -162,7 +155,7 @@ function closeFAQ(element: Element, done: () => void) {
 					</div>
 					<div class="flex flex-col items-center gap-10 lg:flex-row">
 						<p
-							class="border-b-1 flex-1 border-b-neutral-400 py-8 text-xl font-medium leading-10 lg:text-2xl"
+							class="flex-1 border-b-1 border-b-neutral-400 py-8 text-xl leading-10 font-medium lg:text-2xl"
 						>
 							"After going to admitted students day last year and seeing the rover and the space
 							focus I knew I wanted to join Husky Robotics."
@@ -177,7 +170,7 @@ function closeFAQ(element: Element, done: () => void) {
 					</div>
 					<div class="flex flex-col items-center gap-10 lg:flex-row">
 						<p
-							class="border-b-1 flex-1 border-b-neutral-400 py-8 text-xl font-medium leading-10 lg:text-2xl"
+							class="flex-1 border-b-1 border-b-neutral-400 py-8 text-xl leading-10 font-medium lg:text-2xl"
 						>
 							"Our partners really invest in our futures. Being part of this team opened up
 							opportunities I never expected."
@@ -198,19 +191,18 @@ function closeFAQ(element: Element, done: () => void) {
 			class="bg-black"
 		>
 			<RoboticsContainer class="space-y-8 py-20 xl:w-2/3">
-				<h2 class="text-secondary text-5xl font-bold">Application Cycle: 2025-2026</h2>
+				<h2 class="text-5xl font-bold text-secondary">Application Cycle: 2025-2026</h2>
 				<p class="text-lg text-zinc-100">
 					Our main admissions take place during Autumn and Winter quarter, when we welcome new
 					members to join our mission. Decisions are released by the third week of each cycle, and
 					we encourage applicants from all disciplines who are excited to contribute to real
 					engineering projects and exploration.
 				</p>
-				<ArrowLink
-					to="https://docs.google.com/forms/d/e/1FAIpQLScQ7zmbBv6ft_I_yrrAHKHFAjqPW0LmGrMLeFfggS4s5C1FgA/viewform?usp=dialog"
-					target="_blank"
-					>Application Form</ArrowLink
-				>
-				<img src="~/assets/images/join_us.png" />
+				<NuxtImg
+					alt="A deep purple and slightly grainy cosmic sky texture is subtly illuminated with lighter vertical bands of light. A small white pinpoint of light is clearly visible near the center of the image. The colors get darker towards the bottom and right sides. There is a very slight gradient."
+					format="webp"
+					src="/images/joinus/join_us.png"
+				/>
 			</RoboticsContainer>
 		</section>
 		<Destinations />
@@ -222,7 +214,7 @@ function closeFAQ(element: Element, done: () => void) {
 				<p class="font-roboto tracking-robotics">Husky Robotics</p>
 				<h2 class="text-6xl font-bold">FAQs</h2>
 				<div
-					class="divide-y-1 border-y-1 my-8 flex flex-col divide-neutral-400 border-y-neutral-400"
+					class="my-8 flex flex-col divide-y-1 divide-neutral-400 border-y-1 border-y-neutral-400"
 				>
 					<div
 						v-for="faq in faqs"
@@ -230,7 +222,7 @@ function closeFAQ(element: Element, done: () => void) {
 						:key="faq.title"
 					>
 						<h3
-							class="select-none text-xl font-semibold hover:cursor-pointer md:text-2xl"
+							class="text-xl font-semibold select-none hover:cursor-pointer md:text-2xl"
 							role="tab"
 							tabindex="0"
 							@keydown.enter="setExpanded(faq.title)"
@@ -270,7 +262,7 @@ function closeFAQ(element: Element, done: () => void) {
 <style scoped>
 @reference "~/assets/css/main.css";
 .linklist > button {
-	@apply border-b-1 cursor-pointer border-b-neutral-300 py-2 text-left text-lg text-neutral-300;
+	@apply cursor-pointer border-b-1 border-b-neutral-300 py-2 text-left text-lg text-neutral-300;
 	@apply transition-all duration-300 ease-in-out;
 	@apply hover:border-b-secondary hover:text-secondary;
 }
