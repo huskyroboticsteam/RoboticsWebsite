@@ -145,8 +145,8 @@ const subLinks: Link[] = [
 }
 .mobileLink,
 .desktopLink {
-	@apply font-bold text-zinc-300;
-	@apply transition-colors duration-200 ease-in-out;
+	@apply border-2 border-transparent rounded-sm border-dashed uppercase font-roboto text-zinc-300;
+	@apply hover:border-white transition-colors duration-200 ease-in-out;
 }
 .mobileLink {
 	@apply block py-2 text-xl md:text-3xl;
@@ -159,7 +159,7 @@ const subLinks: Link[] = [
 .v-enter-active,
 .v-leave-active {
 	transition: opacity 0.25s ease;
-	@apply text-secondary;
+	@apply border-2 rounded-sm border-white border-solid text-secondary;
 }
 
 .v-enter-from,
