@@ -76,7 +76,7 @@ const drowDowns: DropDownLink[] = [
 					class="flex flex-1 flex-row items-center space-x-5"
 				>
 					<p
-						class="font-roboto text-[0.8rem] tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
+						class="font-roboto text-sm tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
 					>
 						Husky Robotics - UW Seattle
 					</p>
@@ -100,27 +100,19 @@ const drowDowns: DropDownLink[] = [
 						Home
 					</NuxtLink>
 					<div
-						v-for="drowDowns in drowDowns"
+						v-for="dropDown in drowDowns"
 						class="group dropDownGroup"
 					>
-						<button class="desktopLink text-nowrap">hello!</button>
+						<button class="desktopLink text-nowrap">{{ dropDown.text }}</button>
 						<ul
 							class="invisible absolute z-10 bg-black p-2 text-left text-zinc-300 opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-100"
 						>
-							<li>
+							<li v-for="link in dropDown.links">
 								<NuxtLink
-									to="/"
+									:to="link.url"
 									class="dropDownLink"
 								>
-									new page
-								</NuxtLink>
-							</li>
-							<li>
-								<NuxtLink
-									to="/about"
-									class="dropDownLink"
-								>
-									new page 2
+									{{ link.text }}
 								</NuxtLink>
 							</li>
 						</ul>
@@ -201,7 +193,7 @@ const drowDowns: DropDownLink[] = [
 
 .mobileLink,
 .desktopLink {
-	@apply rounded-sm border-2 border-dashed border-transparent font-roboto text-zinc-300 uppercase;
+	@apply rounded-sm border-2 border-dashed border-transparent font-roboto text-sm tracking-robotics2 text-zinc-300 uppercase;
 	@apply transition-colors duration-200 ease-in-out hover:border-white;
 }
 
