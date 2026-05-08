@@ -99,14 +99,14 @@ const newLinks: NavItem[] = [
 				<div
 					class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8"
 				>
-					<NuxtLink
-						v-for="link in links"
-						:to="link.url"
+					<template v-for="newLink in newLinks"> <NuxtLink
+						v-if="typeof newLink.links === 'undefined'"
+						:to="newLink.url"
 						class="desktopLink text-nowrap"
 					>
-						{{ link.text }}
+						{{newLink.text }}
 					</NuxtLink>
-					<div class="group dropDownGroup">
+					<div v-else class="group dropDownGroup">
 						<button class="desktopLink text-nowrap">hello!</button>
 						<ul
 							class="invisible absolute z-10 bg-black p-2 text-left text-zinc-300 opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-100"
@@ -128,7 +128,7 @@ const newLinks: NavItem[] = [
 								</NuxtLink>
 							</li>
 						</ul>
-					</div>
+					</div> </template>
 				</div>
 			</div>
 		</nav>
