@@ -29,18 +29,12 @@ const subLinks: Link[] = [
 	{ text: "Sponsors", url: "/sponsors" }
 ];
 
-type NavItem =
-	| {
-			text: string;
-			url: string;
-	  }
-	| {
-			text: string;
-			links: Link[];
-	  };
+type DropDownLink = {
+	text: string;
+	links: Link[];
+};
 
-const newLinks: NavItem[] = [
-	{ text: "Home", url: "/" },
+const drowDowns: DropDownLink[] = [
 	{
 		text: "About",
 		links: [
@@ -99,14 +93,16 @@ const newLinks: NavItem[] = [
 				<div
 					class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8"
 				>
-					<template v-for="newLink in newLinks"> <NuxtLink
-						v-if="typeof newLink.links === 'undefined'"
-						:to="newLink.url"
+					<NuxtLink
+						to="/"
 						class="desktopLink text-nowrap"
 					>
-						{{newLink.text }}
+						Home
 					</NuxtLink>
-					<div v-else class="group dropDownGroup">
+					<div
+						v-for="drowDowns in drowDowns"
+						class="group dropDownGroup"
+					>
 						<button class="desktopLink text-nowrap">hello!</button>
 						<ul
 							class="invisible absolute z-10 bg-black p-2 text-left text-zinc-300 opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-100"
@@ -128,7 +124,7 @@ const newLinks: NavItem[] = [
 								</NuxtLink>
 							</li>
 						</ul>
-					</div> </template>
+					</div>
 				</div>
 			</div>
 		</nav>
