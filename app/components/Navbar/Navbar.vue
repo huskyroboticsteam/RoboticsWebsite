@@ -28,6 +28,43 @@ const subLinks: Link[] = [
 	{ text: "Leadership", url: "/leadership" },
 	{ text: "Sponsors", url: "/sponsors" }
 ];
+
+type DropDownLink = {
+	text: string;
+	links: Link[];
+};
+
+const drowDowns: DropDownLink[] = [
+	{
+		text: "About",
+		links: [
+			{
+				text: "About",
+				url: "/about"
+			},
+			{ text: "Sponsors", url: "/sponsors" },
+			{ text: "Subteams", url: "/subteams" },
+			{ text: "Competition", url: "/sponsors" },
+			{ text: "Leadership", url: "/leadership" }
+		]
+	},
+	{
+		text: "Follow Us",
+		links: [
+			{ text: "LinkedIn", url: "https://www.linkedin.com/company/husky-robotics/" },
+			{ text: "Instagram", url: "https://www.instagram.com/uwrobots/" },
+			{ text: "Facebook", url: "https://www.facebook.com/uwrobots/" },
+			{ text: "YouTube", url: "https://www.youtube.com/@HuskyRobotics" }
+		]
+	},
+	{
+		text: "Get Involved",
+		links: [
+			{ text: "Join Us", url: "/join" },
+			{ text: "Support", url: "/support" }
+		]
+	}
+];
 </script>
 <template>
 	<Html :class="{ 'overflow-hidden lg:overflow-auto': menuBarOpen }" />
@@ -39,7 +76,7 @@ const subLinks: Link[] = [
 					class="flex flex-1 flex-row items-center space-x-5"
 				>
 					<p
-						class="font-roboto text-[0.8rem] tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
+						class="font-roboto text-sm tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
 					>
 						Husky Robotics - UW Seattle
 					</p>
@@ -57,27 +94,29 @@ const subLinks: Link[] = [
 					class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8"
 				>
 					<NuxtLink
-						v-for="link in links"
-						:to="link.url"
+						to="/"
 						class="desktopLink text-nowrap"
 					>
-						{{ link.text }}
+						Home
 					</NuxtLink>
-				</div>
-			</div>
-		</nav>
-		<nav class="hidden items-center justify-center bg-alt py-2 lg:flex lg:flex-col">
-			<div class="columns-3 content-center items-center justify-center gap-x-16">
-				<div
-					v-for="link in subLinks"
-					class=""
-				>
-					<NuxtLink
-						:to="link.url"
-						class="desktopLink block w-full text-center"
+					<div
+						v-for="dropDown in drowDowns"
+						class="group dropDownGroup"
 					>
-						{{ link.text }}
-					</NuxtLink>
+						<button class="desktopLink text-nowrap">{{ dropDown.text }}</button>
+						<ul
+							class="invisible absolute z-10 bg-black p-2 text-left text-zinc-300 opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-100"
+						>
+							<li v-for="link in dropDown.links">
+								<NuxtLink
+									:to="link.url"
+									class="dropDownLink"
+								>
+									{{ link.text }}
+								</NuxtLink>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -140,26 +179,39 @@ const subLinks: Link[] = [
 </template>
 <style scoped>
 @reference "~/assets/css/main.css";
+
+.dropDownLink {
+	@apply font-roboto uppercase;
+}
+.dropDownLink.router-link-active {
+	@apply text-white;
+}
+
 .scrolled {
 	@apply border-b-2 backdrop-blur-2xl;
 }
+
 .mobileLink,
 .desktopLink {
-	@apply font-bold text-zinc-300;
-	@apply transition-colors duration-200 ease-in-out;
+	@apply rounded-sm border-2 border-dashed border-transparent font-roboto text-sm tracking-robotics2 text-zinc-300 uppercase;
+	@apply transition-colors duration-200 ease-in-out hover:border-white;
 }
+
 .mobileLink {
 	@apply block py-2 text-xl md:text-3xl;
 }
+
 .desktopLink {
 	@apply px-2 py-0.5;
 }
+
 .desktopLink.router-link-active,
 .mobileLink.router-link-active,
+.dropDownGroup:has(ul .router-link-active) .desktopLink,
 .v-enter-active,
 .v-leave-active {
 	transition: opacity 0.25s ease;
-	@apply text-secondary;
+	@apply rounded-sm border-2 border-solid border-white text-secondary;
 }
 
 .v-enter-from,
