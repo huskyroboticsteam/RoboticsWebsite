@@ -34,103 +34,62 @@ const subLinks: Link[] = [
 	<div class="top-0 z-50 will-change-transform">
 		<nav class="hidden items-center justify-center bg-primary px-4 py-5 lg:flex lg:flex-col">
 			<div class="flex w-full flex-row px-6">
-				<NuxtLink
-					href="/"
-					class="flex flex-1 flex-row items-center space-x-5"
-				>
+				<NuxtLink href="/" class="flex flex-1 flex-row items-center space-x-5">
 					<p
-						class="font-roboto text-[0.8rem] tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none"
-					>
+						class="font-roboto text-[0.8rem] tracking-robotics text-secondary uppercase transition-colors duration-200 ease-in-out select-none">
 						Husky Robotics - UW Seattle
 					</p>
 				</NuxtLink>
 				<div class="flex-1">
 					<NuxtLink to="/">
-						<img
-							src="~/assets/images/logo_square_sm.png"
-							class="mx-auto h-10"
-							alt="Husky Robotics Logo"
-						/>
+						<img src="~/assets/images/logo_square_sm.png" class="mx-auto h-10" alt="Husky Robotics Logo" />
 					</NuxtLink>
 				</div>
-				<div
-					class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8"
-				>
-					<NuxtLink
-						v-for="link in links"
-						:to="link.url"
-						class="desktopLink text-nowrap"
-					>
+				<div class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8">
+					<NuxtLink v-for="link in links" :to="link.url" class="desktopLink text-nowrap">
 						{{ link.text }}
 					</NuxtLink>
+					<div class="group dropDownGroup">
+						<button class="desktopLink text-nowrap">
+							hello!
+						</button>
+						<ul class = "bg-black invisible text-left p-2 text-zinc-300 group-hover:visible absolute z-10 transition-opacity duration-200 ease-in-out opacity-0 group-hover:opacity-100"> 
+							<li> <NuxtLink to="/" class="dropDownLink"> 
+								new page
+							</NuxtLink>	
+							</li>
+							<li> <NuxtLink to="/about" class="dropDownLink"> 
+								new page 2
+							</NuxtLink>	
+							</li>
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</nav>
-		<nav class="hidden items-center justify-center bg-alt py-2 lg:flex lg:flex-col">
-			<div class="columns-3 content-center items-center justify-center gap-x-16">
-				<div
-					v-for="link in subLinks"
-					class=""
-				>
-					<NuxtLink
-						:to="link.url"
-						class="desktopLink block w-full text-center"
-					>
-						{{ link.text }}
-					</NuxtLink>
-				</div>
-			</div>
-		</nav>
-		<nav
-			class="relative flex items-center justify-center border-b-2 bg-primary px-4 py-3 lg:hidden"
-		>
+		<nav class="relative flex items-center justify-center border-b-2 bg-primary px-4 py-3 lg:hidden">
 			<div class="container flex flex-row items-center justify-between">
 				<div class="flex flex-row items-center space-x-5">
-					<img
-						src="~/assets/images/logo_square_sm.png"
-						class="max-h-12"
-						alt="Husky Robotics Logo"
-					/>
+					<img src="~/assets/images/logo_square_sm.png" class="max-h-12" alt="Husky Robotics Logo" />
 				</div>
 				<p class="font-roboto text-lg tracking-robotics text-secondary uppercase">Husky Robotics</p>
-				<button
-					role="button"
-					@click="toggleMenu()"
-					class="w-10 rounded-sm py-0.5 text-2xl font-extrabold text-secondary transition-colors duration-100 ease-in-out"
-				>
-					<i
-						class="fa-solid fa-bars"
-						v-show="!menuBarOpen"
-					></i>
-					<i
-						class="fa-regular fa-x"
-						v-show="menuBarOpen"
-					></i>
+				<button role="button" @click="toggleMenu()"
+					class="w-10 rounded-sm py-0.5 text-2xl font-extrabold text-secondary transition-colors duration-100 ease-in-out">
+					<i class="fa-solid fa-bars" v-show="!menuBarOpen"></i>
+					<i class="fa-regular fa-x" v-show="menuBarOpen"></i>
 				</button>
 			</div>
 		</nav>
 		<Transition>
-			<div
-				v-if="menuBarOpen"
-				@click.self="toggleMenu()"
-				class="absolute flex h-screen max-h-screen w-full flex-col bg-black px-5 py-5 lg:hidden"
-			>
+			<div v-if="menuBarOpen" @click.self="toggleMenu()"
+				class="absolute flex h-screen max-h-screen w-full flex-col bg-black px-5 py-5 lg:hidden">
 				<div class="container mx-auto space-y-4">
-					<NuxtLink
-						v-for="link in links"
-						:to="link.url"
-						@click="toggleMenu()"
-						class="mobileLink"
-					>
+					<NuxtLink v-for="link in links" :to="link.url" @click="toggleMenu()" class="mobileLink">
 						{{ link.text }}
 					</NuxtLink>
 					<hr class="border-white" />
-					<NuxtLink
-						v-for="link in subLinks"
-						:to="link.url"
-						@click="toggleMenu()"
-						class="mobileLink"
-					>
+					<NuxtLink v-for="link in subLinks" :to="link.url" @click="toggleMenu()" class="mobileLink">
 						{{ link.text }}
 					</NuxtLink>
 				</div>
@@ -140,22 +99,35 @@ const subLinks: Link[] = [
 </template>
 <style scoped>
 @reference "~/assets/css/main.css";
+
+.dropDownLink{
+	@apply font-roboto uppercase;
+}
+.dropDownLink.router-link-active{
+	@apply text-white;
+}
+
 .scrolled {
 	@apply border-b-2 backdrop-blur-2xl;
 }
+
 .mobileLink,
 .desktopLink {
 	@apply border-2 border-transparent rounded-sm border-dashed uppercase font-roboto text-zinc-300;
 	@apply hover:border-white transition-colors duration-200 ease-in-out;
 }
+
 .mobileLink {
 	@apply block py-2 text-xl md:text-3xl;
 }
+
 .desktopLink {
 	@apply px-2 py-0.5;
 }
+
 .desktopLink.router-link-active,
 .mobileLink.router-link-active,
+.dropDownGroup:has(ul .router-link-active) .desktopLink,
 .v-enter-active,
 .v-leave-active {
 	transition: opacity 0.25s ease;
