@@ -95,10 +95,9 @@ const drowDowns: DropDownLink[] = [
 				>
 					<NuxtLink
 						to="/"
-						class="desktopLink text-nowrap"
+						class="desktopLink"
+						>Home</NuxtLink
 					>
-						Home
-					</NuxtLink>
 					<div
 						v-for="dropDown in drowDowns"
 						class="group dropDownGroup"
@@ -181,7 +180,7 @@ const drowDowns: DropDownLink[] = [
 @reference "~/assets/css/main.css";
 
 .dropDownLink {
-	@apply font-roboto uppercase;
+	@apply font-roboto uppercase hover:text-white;
 }
 .dropDownLink.router-link-active {
 	@apply text-white;
