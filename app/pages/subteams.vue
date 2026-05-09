@@ -99,7 +99,7 @@ function headerTransitionEnter(el: Element) {
 							:key="subteam.title"
 						>
 							<div class="xl:w-1/2 2xl:w-2/5">
-								<NuxtImg
+								<img
 									:src="`/images/teams/${subteam.img}`"
 									class="aspect-5/3 w-full object-cover"
 								/>
