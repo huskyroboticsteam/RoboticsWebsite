@@ -46,12 +46,12 @@ function headerTransitionEnter(el: Element) {
 <template>
 	<main>
 		<section>
-			<img
+			<NuxtImg
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/about2.jpg"
 				class="aspect-16/8 w-full object-cover object-bottom lg:hidden"
 			/>
-			<img
+			<NuxtImg
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/subteams.jpg"
 				class="hidden w-full lg:block"
@@ -99,7 +99,7 @@ function headerTransitionEnter(el: Element) {
 							:key="subteam.title"
 						>
 							<div class="xl:w-1/2 2xl:w-2/5">
-								<img
+								<NuxtImg
 									:src="`/images/teams/${subteam.img}`"
 									class="aspect-5/3 w-full object-cover"
 								/>
