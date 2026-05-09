@@ -27,8 +27,10 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 							class="mx-auto w-full object-contain"
 							sizes="100vw md:50vw lg:400px"
 							format="webp"
+							loading="lazy"
+							decoding="async"
 							densities="1x 2x"
-							:src="`/images/leadership/${member.image}`"
+							:src="`${member.image}`"
 							width="667"
 							height="1000"
 						/>

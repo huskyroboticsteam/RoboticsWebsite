@@ -31,6 +31,18 @@ export default defineNuxtConfig({
 			provider: "ipx"
 		}
 	},
+	image: {
+		format: ["webp", "avif"],
+		quality: 75,
+		densities: [1, 2],
+		screens: {
+			sm: 640,
+			md: 768,
+			lg: 1024,
+			xl: 1280,
+			"2xl": 1536
+		}
+	},
 	nitro: {
 		preset: "cloudflare_pages",
 		prerender: {
