@@ -1,7 +1,7 @@
 name: Systems
 description: Engineer essential electronics and software for autonomous exploration. Develop mission-critical PCBs, C firmware, C++ system software, and autonomous processes on cutting-edge hardware platforms. Gain highly valued experience in troubleshooting, sensor fusion, and sophisticated autonomy validated through unpredictable real-world testing.
 application: '/join'
-img: "systems.jpg"
+img: "/images/teams/systems.jpg"
 subteams:
   - title: "Electronics Hardware & Firmware"
     name: "Electronics"

@@ -1,7 +1,7 @@
 name: Mechanical
 description: Develop precision-engineered robotic systems, mastering CAD, inverse-kinematics, fabrication, and rigorous testing. Build robust, Mars-inspired mobility platforms and innovative payloads, refining critical engineering skills that distinguish you in elite technical environments.
 application: '/join'
-img: "mechanical.jpg"
+img: "/images/teams/mechanical.jpg"
 subteams:
   - title: "Robotic & Mechatronic Arm Engineering"
     name: "Arm"

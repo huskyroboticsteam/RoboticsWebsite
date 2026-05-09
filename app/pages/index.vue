@@ -194,9 +194,9 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 							>
 						</div>
 						<div class="flex flex-1 flex-row justify-center">
-							<img
+							<NuxtImg
 								:alt="`Picture of ${team.name}.`"
-								:src="`/images/teams/${team.img}`"
+								:src="`${team.img}`"
 								class="aspect-3/2 object-cover lg:aspect-16/9 lg:p-5"
 							/>
 						</div>
