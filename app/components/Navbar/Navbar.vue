@@ -44,7 +44,7 @@ const drowDowns: DropDownLink[] = [
 			},
 			{ text: "Sponsors", url: "/sponsors" },
 			{ text: "Subteams", url: "/subteams" },
-			{ text: "Competition", url: "/sponsors" },
+			{ text: "Competition", url: "/competition" },
 			{ text: "Leadership", url: "/leadership" }
 		]
 	},
