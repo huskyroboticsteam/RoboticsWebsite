@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 const { data: teams } = await useAsyncData("teams", () =>
 	queryCollection("teams").where("subteams", "IS NOT NULL").all()
 );
-let currentTeam: Ref<Collections["teams"] | null> = ref(null);
+let currentTeam: Ref<Collections["teams"] | undefined> = ref(undefined);
 let route = useRoute();
 useSeoMeta({
 	title: "Subteams | Husky Robotics"
