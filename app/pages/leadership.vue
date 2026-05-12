@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { gsap } from "gsap";
+
 useSeoMeta({
 	title: "Leadership | Husky Robotics",
 	description: "Meet the team leading Husky Robotics."
@@ -6,6 +8,22 @@ useSeoMeta({
 const { data: leaders } = await useAsyncData("leadership", () =>
 	queryCollection("leadership").all()
 );
+onMounted(() => {
+	const grids = document.querySelectorAll(".members-grid");
+	grids.forEach((grid) => {
+		const members = grid.querySelectorAll(".member");
+		gsap.to(members, {
+			scrollTrigger: {
+				trigger: grid,
+				start: "top 75%"
+			},
+			duration: 0.75,
+			opacity: 1,
+			stagger: 0.15,
+			ease: "power2.out"
+		});
+	});
+});
 </script>
 <template>
 	<main>
@@ -21,8 +39,13 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 						{{ leader.name }}
 					</h2>
 				</div>
-				<div class="mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20">
-					<div v-for="member in leader.people">
+				<div
+					class="members-grid mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20"
+				>
+					<div
+						v-for="member in leader.people"
+						class="member"
+					>
 						<NuxtImg
 							class="mx-auto w-full object-contain"
 							sizes="100vw md:50vw lg:400px"
@@ -61,3 +84,11 @@ const { data: leaders } = await useAsyncData("leadership", () =>
 		</section>
 	</main>
 </template>
+<style scoped>
+/*
+Set opacity to 0 so gsap can animate it in
+ */
+.member {
+	opacity: 0;
+}
+</style>
