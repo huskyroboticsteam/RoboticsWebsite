@@ -8,19 +8,19 @@ useSeoMeta({
 const { data: leaders } = await useAsyncData("leadership", () =>
 	queryCollection("leadership").all()
 );
+const gridRefs = ref<HTMLElement[]>([]);
 onMounted(() => {
-	const grids = document.querySelectorAll(".members-grid");
-	grids.forEach((grid) => {
+	gridRefs.value.forEach((grid) => {
 		const members = grid.querySelectorAll(".member");
 		gsap.to(members, {
 			scrollTrigger: {
 				trigger: grid,
 				start: "top 75%"
 			},
-			duration: 0.75,
+			duration: 0.5,
 			opacity: 1,
 			stagger: 0.15,
-			ease: "power2.out"
+			ease: "power2.in"
 		});
 	});
 });
@@ -40,7 +40,8 @@ onMounted(() => {
 					</h2>
 				</div>
 				<div
-					class="members-grid mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20"
+					ref="gridRefs"
+					class="mx-auto grid max-w-6xl gap-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-20"
 				>
 					<div
 						v-for="member in leader.people"
