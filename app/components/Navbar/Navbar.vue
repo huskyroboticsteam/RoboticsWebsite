@@ -14,6 +14,10 @@ watch(menuBarOpen, (open) => {
 	expanded.value = active ? active.text : null;
 });
 
+/*
+We are watching the current url, when the current url changes, close the menu bar and collpase all
+expanded sections in the mobile navbar.
+ */
 watch(
 	() => route.fullPath,
 	() => {
