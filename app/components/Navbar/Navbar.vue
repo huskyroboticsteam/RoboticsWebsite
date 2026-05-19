@@ -161,7 +161,7 @@ const drowDowns: DropDownLink[] = [
 			<div
 				v-if="menuBarOpen"
 				@click.self="toggleMenu()"
-				class="absolute flex h-screen max-h-screen w-full flex-col bg-black px-5 py-5 lg:hidden"
+				class="absolute flex h-dvh max-h-dvh w-full flex-col bg-black px-5 py-5 lg:hidden"
 			>
 				<div class="container mx-auto space-y-4">
 					<NavLink
