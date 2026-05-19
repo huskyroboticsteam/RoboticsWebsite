@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import type { Link } from "~/types/ui";
+import NavLink from "~/components/Navbar/NavLink.vue";
 let menuBarOpen = ref(false);
 let scroll = ref(0);
 onMounted(() => {
@@ -9,11 +11,6 @@ onMounted(() => {
 	});
 });
 const toggleMenu = useToggle(menuBarOpen);
-
-type Link = {
-	text: string;
-	url: string;
-};
 
 const links: Link[] = [
 	{ text: "Home", url: "/" },
@@ -45,7 +42,8 @@ const drowDowns: DropDownLink[] = [
 			{ text: "Sponsors", url: "/sponsors" },
 			{ text: "Subteams", url: "/subteams" },
 			{ text: "Competition", url: "/competition" },
-			{ text: "Leadership", url: "/leadership" }
+			{ text: "Leadership", url: "/leadership" },
+			{ text: "Gallery", url: "/gallery" }
 		]
 	},
 	{
@@ -93,29 +91,13 @@ const drowDowns: DropDownLink[] = [
 				<div
 					class="flex flex-1 flex-row items-center justify-end space-x-4 text-center xl:space-x-8"
 				>
-					<NuxtLink
-						to="/"
-						class="desktopLink"
-						>Home</NuxtLink
-					>
-					<div
+					<NavLink to="/"> Home </NavLink>
+					<NavLink
 						v-for="dropDown in drowDowns"
-						class="group dropDownGroup"
+						:to="dropDown.links"
 					>
-						<button class="desktopLink text-nowrap">{{ dropDown.text }}</button>
-						<ul
-							class="invisible absolute z-10 bg-black p-2 text-left text-zinc-300 opacity-0 transition-opacity duration-200 ease-in-out group-hover:visible group-hover:opacity-100"
-						>
-							<li v-for="link in dropDown.links">
-								<NuxtLink
-									:to="link.url"
-									class="dropDownLink"
-								>
-									{{ link.text }}
-								</NuxtLink>
-							</li>
-						</ul>
-					</div>
+						{{ dropDown.text }}
+					</NavLink>
 				</div>
 			</div>
 		</nav>
