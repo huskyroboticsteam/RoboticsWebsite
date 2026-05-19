@@ -126,10 +126,9 @@ function closeMenu(element: Element) {
 
 .dropDownLink {
 	@apply font-roboto uppercase hover:text-white;
-}
-
-.dropDownLink.router-link-active {
-	@apply text-white;
+	&.router-link-active {
+		@apply text-white;
+	}
 }
 
 .mobileDropDownLink {
@@ -138,28 +137,22 @@ function closeMenu(element: Element) {
 
 .mobileLink {
 	@apply block py-2 text-left text-xl text-zinc-300 uppercase md:text-3xl;
+	&.router-link-active,
+	.dropDownGroup:has(ul .router-link-active) & {
+		@apply text-white;
+	}
 }
 
 .desktopLink {
-	@apply rounded-sm border-2 border-dashed border-transparent px-2 py-0.5 font-roboto text-sm tracking-robotics2 text-zinc-300 uppercase;
-	@apply transition-colors duration-200 ease-in-out hover:border-white;
-}
-
-.desktopLink.router-link-active,
-.dropDownGroup:has(ul .router-link-active) .desktopLink {
-	@apply md:rounded-sm md:border-2 md:border-solid md:border-white md:text-secondary;
+	@apply rounded-sm border-2 border-dashed border-transparent px-2 py-0.5 font-roboto text-sm tracking-robotics2 text-zinc-300 uppercase transition-colors duration-200 ease-in-out hover:border-white;
+	&.router-link-active,
+	.dropDownGroup:has(ul .router-link-active) & {
+		@apply border-solid border-white text-secondary;
+	}
 }
 
 .v-enter-active,
 .v-leave-active {
 	transition: opacity 0.25s ease;
-}
-
-.mobileLink.router-link-active {
-	@apply text-white;
-}
-.mobileLink.router-link-active,
-.dropDownGroup:has(ul .router-link-active) .mobileLink {
-	@apply text-white;
 }
 </style>
