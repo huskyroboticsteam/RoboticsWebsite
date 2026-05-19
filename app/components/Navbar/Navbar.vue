@@ -3,18 +3,10 @@ import { ref } from "vue";
 import type { Link } from "~/types/ui";
 import NavLink from "~/components/Navbar/NavLink.vue";
 
-let menuBarOpen = ref(false);
-let scroll = ref(0);
-let expanded = ref<string | null>(null);
+const menuBarOpen = ref(false);
+const expanded = ref<string | null>(null);
 
 const route = useRoute();
-
-onMounted(() => {
-	let { y } = useWindowScroll();
-	watch(y, (value) => {
-		scroll.value = value;
-	});
-});
 
 watch(menuBarOpen, (open) => {
 	if (!open) return;
@@ -198,10 +190,6 @@ const drowDowns: DropDownLink[] = [
 
 <style scoped>
 @reference "~/assets/css/main.css";
-
-.scrolled {
-	@apply border-b-2 backdrop-blur-2xl;
-}
 
 .v-enter-from,
 .v-leave-to {
