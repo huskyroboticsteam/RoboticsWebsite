@@ -32,21 +32,6 @@ function handleToggle(id: string) {
 	expanded.value = expanded.value === id ? null : id;
 }
 
-const links: Link[] = [
-	{ text: "Home", url: "/" },
-	{ text: "About", url: "/about" },
-	{ text: "Gallery", url: "/gallery" },
-	{ text: "Support", url: "/support" },
-	{ text: "Join Us", url: "/join" },
-	{ text: "Competition", url: "/competition" }
-];
-
-const subLinks: Link[] = [
-	{ text: "Subteams", url: "/subteams" },
-	{ text: "Leadership", url: "/leadership" },
-	{ text: "Sponsors", url: "/sponsors" }
-];
-
 type DropDownLink = {
 	text: string;
 	links: Link[];
