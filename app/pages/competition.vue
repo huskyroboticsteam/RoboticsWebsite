@@ -10,9 +10,9 @@ useSeoMeta({
         <!-- HERO -->
         <section class="relative">
             <img
-                src="../assets/images/competition/urc_team_2025.jpg"
+                src="../assets/images/competition/DSC03692-7.jpg"
                 alt="Husky Robotics at competition."
-                class="aspect-16/7 w-full object-cover object-center"
+                class="aspect-16/9 w-full object-cover object-center"
             />
             <div
                 style="background: linear-gradient(236deg, rgba(115,115,115,0.2) 22.93%, rgba(0,0,0,0.65) 83.23%);"
@@ -71,9 +71,9 @@ useSeoMeta({
                     will discuss the on-board soil testing results.
                 </p>
                 <img
-                    src="../assets/images/competition/DSC08695.jpg"
+                    src="../assets/images/competition/DSC04861.JPG"
                     alt="Rover performing science mission."
-                    class="aspect-video w-full object-cover"
+                    class="aspect-16/9 w-full object-cover"
                 />
             </RoboticsContainer>
         </section>
@@ -110,7 +110,7 @@ useSeoMeta({
                     on Mars. 
                 </p>
                 <img
-                    src="../assets/images/competition/mobility_2025.jpg"
+                    src="../assets/images/competition/urcdeliverymission.JPG"
                     alt="Rover performing delivery mission."
                     class="aspect-video w-full object-cover"
                 />
@@ -140,7 +140,7 @@ useSeoMeta({
                     card. Finally, it connects a hose from a fuel tank to the lander.
                 </p>
                 <img
-                    src="../assets/images/competition/equipment_servicing.jpg"
+                    src="../assets/images/competition/DSC05498.JPG"
                     alt="Rover performing equipment servicing mission."
                     class="aspect-video w-full object-cover"
                 />
@@ -162,7 +162,7 @@ useSeoMeta({
                     behind rocks or other naturally occurring obstacles.
                 </p>
                 <img
-                    src="../assets/images/competition/coding_2025_hrc.jpg"
+                    src="../assets/images/competition/DSC05799.jpg"
                     alt="Rover performing autonomous navigation mission."
                     class="aspect-video w-full object-cover"
                 />
