@@ -26,8 +26,10 @@ function validate() {
 	if (props.schema) {
 		let result = props.schema.safeParse(value.value);
 		if (!result.success) {
-			error.value = result.error.issues[0].message;
-			console.log(result.error.issues[0]);
+			if (result.error.issues[0]) {
+				error.value = result.error.issues[0].message;
+				console.log(result.error.issues[0]);
+			}
 		} else {
 			error.value = "";
 		}

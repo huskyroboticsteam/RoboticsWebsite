@@ -1,5 +1,5 @@
-import { defineCollection, defineContentConfig, z } from "@nuxt/content";
-
+import { defineCollection, defineContentConfig } from "@nuxt/content";
+import z from "zod";
 export default defineContentConfig({
 	collections: {
 		teams: defineCollection({
@@ -8,7 +8,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				description: z.string(),
-				application: z.string().url().optional(),
+				application: z.url().optional(),
 				img: z.string(),
 				subteams: z.array(
 					z.object({
@@ -26,7 +26,7 @@ export default defineContentConfig({
 			schema: z.object({
 				name: z.string(),
 				description: z.string(),
-				link: z.string().url(),
+				link: z.url(),
 				img: z.string(),
 				items: z.array(
 					z.object({

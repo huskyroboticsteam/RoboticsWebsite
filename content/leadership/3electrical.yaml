@@ -2,25 +2,25 @@ name: Electronics
 people:
   - name: Neha Krishnakumar
     role: Hardware Lead
-    image: "neha.jpg"
+    image: "/images/leadership/neha.jpg"
     linkedin: "https://www.linkedin.com/in/nehakrishnakumar/"
 
   - name: Hayden Rundle
     role: Firmware Lead
-    image: "hayden.png"
+    image: "/images/leadership/hayden.png"
     linkedin: "https://www.linkedin.com/in/hayden-rundle-b4a283279/"
 
   - name: Caleb Ceravolo
     role: Instrumentation Electronics Lead
-    image: "caleb.jpg"
+    image: "/images/leadership/caleb.jpg"
     linkedin: "https://www.linkedin.com/in/caleb-ceravolo/"
 
   - name: Isaac Wu
     role: Software Lead
-    image: "isaac.jpg"
+    image: "/images/leadership/isaac.jpg"
     linkedin: "https://www.linkedin.com/in/isaacw1925/"
 
   - name: Johnathan Lui
     role: Drone Electronics Lead
-    image: "johnathan.jpg"
+    image: "/images/leadership/johnathan.jpg"
     linkedin: "https://www.linkedin.com/in/jonathan-liu-202081252/"

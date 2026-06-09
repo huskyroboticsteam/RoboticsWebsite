@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 const { data: teams } = await useAsyncData("teams", () =>
 	queryCollection("teams").where("subteams", "IS NOT NULL").all()
 );
-let currentTeam: Ref<Collections["teams"] | null> = ref(null);
+let currentTeam: Ref<Collections["teams"] | undefined> = ref(undefined);
 let route = useRoute();
 useSeoMeta({
 	title: "Subteams | Husky Robotics"
@@ -46,12 +46,12 @@ function headerTransitionEnter(el: Element) {
 <template>
 	<main>
 		<section>
-			<img
+			<NuxtImg
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/about2.jpg"
 				class="aspect-16/8 w-full object-cover object-bottom lg:hidden"
 			/>
-			<img
+			<NuxtImg
 				alt="Husky Robotics Team Photo"
 				src="/images/teams/subteams.jpg"
 				class="hidden w-full lg:block"

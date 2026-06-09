@@ -1,7 +1,7 @@
 name: Administration
 description: "Lead operations, communications, design, and strategic partnerships, mastering essential leadership skills. Coordinate complex technical milestones, amplify Husky Robotics' prestigious reputation, manage robust finances, and secure sponsorships, positioning you prominently in future management and leadership roles."
 application: '/join'
-img: "admin.jpg"
+img: "/images/teams/admin.jpg"
 subteams:
   - title: "Operation Management"
     name: "Business"

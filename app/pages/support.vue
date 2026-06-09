@@ -100,7 +100,7 @@ async function handleSubmit(e: Event) {
 		}
 	}).catch((error: FetchError) => {
 		if (error.status == 400) {
-			error.data.forEach((element: z.ZodError) => {
+			error.data.forEach((element: z.core.$ZodIssue) => {
 				errors.value[element.path[0] as keyof Error] = element.message;
 			});
 		} else if (error.status == 403) {
