@@ -85,7 +85,7 @@ const { data: gallery } = await useAsyncData("gallery", () => queryCollection("g
 						ref="buttonGroup"
 						class="invisible mt-8 flex flex-col gap-8 md:flex-row"
 					>
-						<ArrowLink to="/support">Support Us</ArrowLink>
+						<ArrowLink to="/join">Join The Team</ArrowLink>
 					</div>
 				</RoboticsContainer>
 			</div>

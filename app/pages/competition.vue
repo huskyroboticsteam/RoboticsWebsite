@@ -1,33 +1,11 @@
 <script setup lang="ts">
 useSeoMeta({
-	title: "Competition | Husky Robotics"
+    title: "Competition | Husky Robotics"
 });
 </script>
 
 <template>
-	<main class="bg-black">
-		<!-- HERO -->
-		<section class="relative overflow-hidden">
-			<img
-				src="../assets/images/competition/urc_team_2025.jpg"
-				alt="Husky Robotics at competition."
-				class="absolute inset-0 h-full w-full object-cover object-center"
-			/>
-			<div
-				class="relative"
-				style="
-					background: linear-gradient(
-						236deg,
-						rgba(115, 115, 115, 0.2) 22.93%,
-						rgba(0, 0, 0, 0.65) 83.23%
-					);
-				"
-			>
-				<RoboticsContainer class="py-24 md:py-52 lg:py-64 xl:py-80">
-					<h1 class="text-5xl font-bold text-secondary md:text-6xl lg:text-7xl">Competition</h1>
-				</RoboticsContainer>
-			</div>
-		</section>
+    <main class="bg-black">
 
 		<!-- HERO -->
 		<section class="relative">
@@ -108,41 +86,30 @@ useSeoMeta({
 			</RoboticsContainer>
 		</section>
 
-		<!-- MISSION 2: DELIVERY -->
-		<section>
-			<RoboticsContainer class="space-y-6 py-16 lg:max-w-6/10">
-				<h2 class="text-5xl font-bold text-secondary">Mission 2: Delivery</h2>
-				<p class="font-bold text-secondary">
-					<span class="text-green-400">•</span> The rover, assisted by a drone, must deliver a
-					variety of objects to astronauts stationed in the field. Traversing rugged terrain, the
-					rover will travel up to 2 kilometers as it completes this mission in two stages.
-				</p>
-				<p class="text-secondary">
-					<strong>Stage 1:</strong> The rover opens a toolbox, picks up an object inside, and
-					deliver it to a cache. Once this has been completed, it picks up wreckage pieces and
-					delivers them to astronaut 1 stationed in the field. Finally, it must navigate from start
-					to end cones, picking up an object and bringing it back to the start. With only 35 minutes
-					to cover 2 kilometers, the rover must be efficient in its navigation and uses a 6 wheel
-					frame with four driving wheels to maneuver through uneven terrain.
-				</p>
-				<p class="text-secondary">
-					<strong>Stage 2:</strong> After taking an hour to recharge, the rover needs to find a
-					designated object within a 20 meter radius and deliver it to astronaut 2. It must also
-					find a piece of hidden wreckage in the field and deliver to the same astronaut.
-				</p>
-				<p class="text-secondary">
-					<strong>Drone:</strong> The drone assists the rover by reading signs, searching large
-					areas or acting as radio relay in areas where the rover on the ground may have poor
-					reception. It must follow a rotary wing design and carry dummy weight equal to battery to
-					simulate gravity on Mars.
-				</p>
-				<img
-					src="../assets/images/competition/mobility_2025.jpg"
-					alt="Rover performing delivery mission."
-					class="aspect-video w-full object-cover"
-				/>
-			</RoboticsContainer>
-		</section>
+        <!-- INTRO -->
+        <section class="bg-white">
+            <RoboticsContainer class="flex flex-col gap-12 py-20 lg:flex-row lg:items-center">
+                <div class="flex-1 space-y-4">
+                    <p class="text-black xl:text-lg">
+                        The <strong>University Rover Challenge (URC)</strong> is the world's premier robotics
+                        competition for college students. Against the backdrop of the Utah desert, the rover
+                        completes tasks that simulate planetary exploration on Mars. Competing against 34 other
+                        teams over 4 days, the rover participates in four challenges outlined below.
+                    </p>
+                </div>
+                <div class="w-full flex-1">
+                    <div class="aspect-video w-full overflow-hidden rounded-sm">
+                        <iframe
+                            class="h-full w-full"
+                            src="https://www.youtube.com/embed/PJVO7Ae7_4M?si=CNEmDFMKfRhhFo_R"
+                            title="URC official submission video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                            allowfullscreen
+                        />
+                    </div>
+                </div>
+            </RoboticsContainer>
+        </section>
 
 		<!-- MISSION 1: SCIENCE -->
 		<section>
