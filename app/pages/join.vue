@@ -63,9 +63,16 @@ function closeFAQ(element: Element, done: () => void) {
 							Join our team of 100+ talented UW engineers: gain industry experience, collaborate in
 							a very strong team culture, build the skills to launch into the world after college
 						</p>
-						<p class="text-2xl font-bold text-secondary">
-							Please check back for Fall 2026 Applications, hoping to open in September.
-						</p>
+						<div class="mt-4 border-t border-accent pt-6 space-y-4">
+							<p class="text-lg text-secondary font-bold">Applications for the 2026/2027 school year are now open:</p>
+							<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSf-hV9EpVEYgMaG-yXgcaFGlxz1cUwrVjrxQ6HlY3X4YuhpXw/viewform"
+   							 target="_blank"
+   							class="inline-block border-2 border-solid border-secondary px-4 py-1 font-roboto text-sm uppercase tracking-robotics text-secondary rounded-sm"
+						>
+    						Apply to Join
+						</a>
+						</div>
 					</div>
 				</RoboticsContainer>
 				<RoboticsContainer>
@@ -191,7 +198,7 @@ function closeFAQ(element: Element, done: () => void) {
 			class="bg-black"
 		>
 			<RoboticsContainer class="space-y-8 py-20 xl:w-2/3">
-				<h2 class="text-5xl font-bold text-secondary">Application Cycle: 2025-2026</h2>
+				<h2 class="text-5xl font-bold text-secondary">Application Cycle: 2026-2027</h2>
 				<p class="text-lg text-zinc-100">
 					Our main admissions take place during Autumn and Winter quarter, when we welcome new
 					members to join our mission. Decisions are released by the third week of each cycle, and

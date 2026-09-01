@@ -27,10 +27,13 @@ export default defineNuxtConfig({
 		}
 	},
 	$development: {
-		image: {
-			provider: "ipx"
-		}
-	},
+    nitro: {
+        preset: "node-server"
+    },
+    image: {
+        provider: "ipx"
+    }
+},
 	image: {
 		format: ["webp", "avif"],
 		quality: 75,
