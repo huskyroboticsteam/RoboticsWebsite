@@ -1,46 +1,40 @@
 name: Mechanical
 people:
+  - name: Aayush Talluri
+    role: Arm Project Lead
+    image: "/images/leadership/aayush-talluri.jpg"
+
   - name: Sean Hoagland
-    role: Arm Lead
-    image: "/images/leadership/sean.jpg"
+    role: Arm Chief Engineer
+    image: "/images/leadership/sean-hoagland.jpg"
     linkedin: "https://www.linkedin.com/in/sean-a-hoagland/"
 
-  - name: Isla McKasson
-    role: Arm Lead
-    image: "/images/leadership/isla.jpg"
-    linkedin: "https://www.linkedin.com/in/isla-mckasson/"
+  - name: Daniil Yugay
+    role: Mobility Project Lead
+    image: "/images/leadership/daniil-yugay.jpg"
 
-  - name: David Green
-    role: Mobility Lead
-    image: "/images/leadership/david.jpg"
-    linkedin: "https://www.linkedin.com/in/davidgreen74/"
-
-  - name: Kien Perryman
-    role: Mobility Lead
-    image: "/images/leadership/kien.png"
-    linkedin: "https://www.linkedin.com/in/kien-perryman/"
+  - name: Vincent Luc
+    role: Mobility Lead Engineer
+    image: "/images/leadership/vincent-luc.jpg"
 
   - name: Max Schleicher
-    role: Instrumentation Lead
-    image: "/images/leadership/max.jpg"
+    role: Instrumentation Mechanical Lead
+    image: "/images/leadership/max-schleicher.jpg"
     linkedin: "https://www.linkedin.com/in/maximillian-schleicher-846068274/"
 
   - name: Alex Ross
-    role: Instrumentation Lead
-    image: "/images/leadership/alex.png"
+    role: Instrumentation Science Lead
+    image: "/images/leadership/alex-ross.jpg"
     linkedin: "https://www.linkedin.com/in/al-ross/"
 
-  - name: Don Nguyen
-    role: Manufacturing Lead
-    image: "/images/leadership/don.jpg"
-    linkedin: "https://www.linkedin.com/in/donnguyen188/"
+  - name: Emma Le
+    role: Manufacturing Mentorship Lead
+    image: "/images/leadership/emma-le.jpg"
 
-  - name: Jenny Wang
-    role: Manufacturing Lead
-    image: "/images/leadership/jenny.jpg"
-    linkedin: "https://www.linkedin.com/in/chen-wang-b54794299/"
+  - name: Ken Clark
+    role: Manufacturing Logistics Lead
+    image: "/images/leadership/ken-clark.jpg"
 
-  - name: Tommy Stiles
+  - name: Trivin Pham
     role: Drone Mechanical Lead
-    image: "/images/leadership/tommy.jpg"
-    linkedin: "https://www.linkedin.com/in/stiles1/"
+    image: "/images/leadership/trivin-pham.jpg"

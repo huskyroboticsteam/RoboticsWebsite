@@ -1,9 +1,9 @@
 name: Directors
 people:
-  - name: Matthew Grimes
-    role: Operational Director
-    image: "/images/leadership/matthew.jpg"
-    linkedin: "https://www.linkedin.com/in/matthew-grimes-304737256/"
+  - name: Micah Kim
+    role: Operations Director
+    image: "/images/leadership/micah-kim.jpg"
+    linkedin: "https://www.linkedin.com/in/micahkim253/"
   - name: Lucas Meza
     role: ME Faculty Advisor
     image: "/images/leadership/meza.png"
@@ -12,16 +12,13 @@ people:
     role: ECE Faculty Advisor
     image: "/images/leadership/sep.png"
     linkedin: "https://www.linkedin.com/in/sepm"
-  - name: Micah Kim
+  - name: TJ Morrow
     role: Business Lead
-    image: "/images/leadership/micah.jpg"
-    linkedin: "https://www.linkedin.com/in/micahkim253/"
-  - name: Tom Lewis
+    image: "/images/leadership/tj-morrow.jpg"
+  - name: David Green
     role: Mechanical Lead
-    image: "/images/leadership/tom.jpg"
-    linkedin: "https://www.linkedin.com/in/tomlewis8/"
-  - name: Ryan Lee
+    image: "/images/leadership/david-green.jpg"
+    linkedin: "https://www.linkedin.com/in/davidgreen74/"
+  - name: Becca Caulton
     role: Systems Lead
-    image: "/images/leadership/ryan.jpg"
-    linkedin: "https://www.linkedin.com/in/ryanhlee1/"
-
+    image: "/images/leadership/becca-caulton.jpg"

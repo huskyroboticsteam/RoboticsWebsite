@@ -47,7 +47,7 @@ export default defineContentConfig({
 						name: z.string(),
 						role: z.string(),
 						image: z.string(),
-						linkedin: z.string()
+						linkedin: z.string().optional()
 					})
 				)
 			})

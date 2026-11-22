@@ -1,16 +1,22 @@
 name: Business
 people:
-  - name: Micah Kim
+  - name: Maia Womack
     role: Public Relations Lead
-    image: "/images/leadership/micah.jpg"
-    linkedin: "https://www.linkedin.com/in/micahkim253/"
+    image: "/images/leadership/maia-womack.jpg"
 
-  - name: Nelly Mayre Vasquez Perez
-    role: Donor Relations Lead
-    image: "/images/leadership/nelly.jpg"
-    linkedin: "http://www.linkedin.com/in/nelly-v"
-
-  - name: Daigo Hayashi
+  - name: Danny Al-Ali
     role: Finance Lead
-    image: "/images/leadership/daigo.jpg"
-    linkedin: "https://www.linkedin.com/in/daigo-hayashi-4b176933b/"
+    image: "/images/leadership/danny-al-ali.jpg"
+
+  - name: Kien Perryman
+    role: Outreach Lead
+    image: "/images/leadership/kien-perryman.jpg"
+    linkedin: "https://www.linkedin.com/in/kien-perryman/"
+
+  - name: Minh Ha
+    role: ESC Representative
+    image: "/images/leadership/minh-ha.jpg"
+
+  - name: Thomas Collins
+    role: Workspace Lead
+    image: "/images/leadership/thomas-collins.jpg"

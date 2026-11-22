@@ -48,14 +48,15 @@ onMounted(() => {
 						class="member"
 					>
 						<NuxtImg
-							class="mx-auto w-full object-contain"
+							class="mx-auto aspect-[4/5] w-full object-cover object-top"
 							sizes="100vw md:50vw lg:400px"
 							format="webp"
 							loading="lazy"
 							decoding="async"
 							densities="1x 2x"
 							:src="`${member.image}`"
-							width="667"
+							:alt="`${member.name}, ${member.role}`"
+							width="800"
 							height="1000"
 						/>
 						<div class="py-2">
@@ -70,7 +71,9 @@ onMounted(() => {
 								>
 									{{ member.name }}
 									<NuxtLink
+										v-if="member.linkedin"
 										:href="member.linkedin"
+										:aria-label="`${member.name} on LinkedIn`"
 										target="_blank"
 										class="hover:text-black"
 									>
