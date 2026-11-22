@@ -15,10 +15,12 @@ people:
   - name: TJ Morrow
     role: Business Lead
     image: "/images/leadership/tj-morrow.jpg"
+    linkedin: "https://www.linkedin.com/in/tj-morrow19"
   - name: David Green
     role: Mechanical Lead
-    image: "/images/leadership/david-green.jpg"
+    image: "/images/leadership/David_Green_Mech_Lead.JPG"
     linkedin: "https://www.linkedin.com/in/davidgreen74/"
   - name: Becca Caulton
     role: Systems Lead
     image: "/images/leadership/becca-caulton.jpg"
+    linkedin: "https://www.linkedin.com/in/rebeccacaulton/"

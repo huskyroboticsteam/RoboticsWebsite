@@ -3,10 +3,12 @@ people:
   - name: Maia Womack
     role: Public Relations Lead
     image: "/images/leadership/maia-womack.jpg"
+    linkedin: "https://www.linkedin.com/in/maia-womack/"
 
   - name: Danny Al-Ali
     role: Finance Lead
     image: "/images/leadership/danny-al-ali.jpg"
+    linkedin: "https://www.linkedin.com/in/dalaliengineering/"
 
   - name: Kien Perryman
     role: Outreach Lead
@@ -16,7 +18,6 @@ people:
   - name: Minh Ha
     role: ESC Representative
     image: "/images/leadership/minh-ha.jpg"
+    linkedin: "https://www.linkedin.com/in/minh-tuan-ha/"
 
-  - name: Thomas Collins
-    role: Workspace Lead
-    image: "/images/leadership/thomas-collins.jpg"
+

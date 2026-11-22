@@ -1,16 +1,19 @@
-name: Electronics
+name: Systems
 people:
   - name: Ingrid Yan
     role: Hardware Lead
     image: "/images/leadership/ingrid-yan.jpg"
+    linkedin: "https://www.linkedin.com/in/ingrid-yannn/"
 
   - name: Yisen Tan
     role: Hardware Lead
     image: "/images/leadership/yisen-tan.jpg"
+    linkedin: "https://www.linkedin.com/in/yisen-tan/"
 
   - name: Lakshyaath Yellasiri
     role: Firmware Lead
     image: "/images/leadership/lakshyaath-yellasiri.jpg"
+    linkedin: "https://www.linkedin.com/in/lakshyaathyellasiri/"
 
   - name: Caleb Ceravolo
     role: Instrumentation Electronics Lead
@@ -20,15 +23,19 @@ people:
   - name: Ellie Lim
     role: Software Lead
     image: "/images/leadership/ellie-lim.jpg"
+    linkedin: "https://www.linkedin.com/in/ellie-lim-309604383/"
 
   - name: Patrick Rungruengwatanachai
     role: Software Lead
-    image: "/images/leadership/patrick-rungruengwatanachai.jpg"
+    image: "/images/leadership/Patrick_Rungruengwatanachai_Software_Lead.JPG"
+    linkedin: "https://www.linkedin.com/in/patrick-rungruengwatanachai-b509b6229/"
 
   - name: Jared Sarinana Lozano
     role: Drone Electronics Lead
-    image: "/images/leadership/jared-sarinana-lozano.jpg"
+    image: "/images/leadership/jared_Sarinana_Lozano_Drone_Electronics_Lead.JPG"
+    linkedin: "https://www.linkedin.com/in/jared-sl/"
 
   - name: Jooyoung Son
     role: Integration Lead
     image: "/images/leadership/jooyoung-son.jpg"
+    linkedin: "https://www.linkedin.com/in/jooyoung-son-93172533b/"
